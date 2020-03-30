@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="demo"
+    errors="1" failures="1" hostname="" id="" package="demo" skipped="0"
+    tests="1" time="34.65" timestamp="">
+  
+    <testcase name="Propel demo test" classname="demo" time="34.65" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;#select2-vendor-97-results &gt; li[value=&#39;Gav&#39;s Plan shop&#39;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5259ms)[0m">    at Object.Propel demo test (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\tests\demo.js:24:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+
+    
+      <failure message="    at Object.Propel demo test (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\tests\demo.js:24:11)">    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+      <error message="Timed out while waiting for element &lt;#select2-vendor-97-results &gt; li[value=&#39;Gav&#39;s Plan shop&#39;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5259ms)[0m" type="error">    at processTicksAndRejections (internal/process/task_queues.js:97:5)</error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+      [0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;body &gt; span &gt; span &gt; span.select2-search.select2-search--dropdown &gt; input&gt;: undefined; undefined
+   {&#34;sessionId&#34;:&#34;679b0154b0a76777e2938ba570a65212&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

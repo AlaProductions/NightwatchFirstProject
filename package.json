@@ -1,0 +1,22 @@
+{
+  "name": "propel-nightwatch",
+  "version": "1.0.0",
+  "description": "propel end to end tests using with nightwatch selenium ",
+  "main": "nightwatch.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/AAshok906/https-bitbucket.org-henryhowardfinance-profile-repositories/pull-requests/"
+  },
+  "author": "ashok anthagiri",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^1.3.4"
+  },
+  "devDependencies": {
+    "chromedriver": "^80.0.1",
+    "geckodriver": "^1.19.1"
+  }
+}
