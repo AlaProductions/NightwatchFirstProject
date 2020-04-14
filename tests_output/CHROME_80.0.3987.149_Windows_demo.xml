@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
-            failures="1"
+<testsuites errors="7"
+            failures="0"
             tests="1">
 
   <testsuite name="demo"
-    errors="1" failures="1" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="34.65" timestamp="">
+    errors="7" failures="0" hostname="" id="" package="demo" skipped="0"
+    tests="1" time="66.23" timestamp="">
   
-    <testcase name="Propel demo test" classname="demo" time="34.65" assertions="5">
+    <testcase name="Propel demo test" classname="demo" time="66.23" assertions="4">
 
     
 
@@ -15,12 +15,12 @@
 
     
 
-      <failure message="Timed out while waiting for element &lt;#select2-vendor-97-results &gt; li[value=&#39;Gav&#39;s Plan shop&#39;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5259ms)[0m">    at Object.Propel demo test (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\tests\demo.js:24:11)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
-
     
-      <failure message="    at Object.Propel demo test (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\tests\demo.js:24:11)">    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
-      <error message="Timed out while waiting for element &lt;#select2-vendor-97-results &gt; li[value=&#39;Gav&#39;s Plan shop&#39;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5259ms)[0m" type="error">    at processTicksAndRejections (internal/process/task_queues.js:97:5)</error>
+      <error message="An error occurred while running .click() command on &lt;#app &gt; main &gt; div &gt; div.business-type-wrapper &gt; div:nth-child(2) &gt; div &gt; div &gt; div &gt; select &gt; option value =&#39;4&#39;&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); invalid selector: An invalid or illegal selector was specified" type="error">NoSuchElementError: An error occurred while running .click() command on &lt;#app &gt; main &gt; div &gt; div.business-type-wrapper &gt; div:nth-child(2) &gt; div &gt; div &gt; div &gt; select &gt; option value =&#39;4&#39;&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); invalid selector: An invalid or illegal selector was specified
+    at ClickElement.noSuchElementError (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\node_modules\nightwatch\lib\element\command.js:363:12)
+    at Object.errorHandler (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (C:\Users\ashok\OneDrive\Documents\Propel-Nightwatch\node_modules\nightwatch\lib\utils\periodic-promise.js:60:29)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</error>
     
     </testcase>
   
@@ -28,7 +28,25 @@
   
     <system-err>
       [0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;body &gt; span &gt; span &gt; span.select2-search.select2-search--dropdown &gt; input&gt;: undefined; undefined
-   {&#34;sessionId&#34;:&#34;679b0154b0a76777e2938ba570a65212&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+   {&#34;sessionId&#34;:&#34;91982e978fe40946a7650947aa0ad238&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  TimeoutError: An error occurred while running .setValue() command on &lt;#account-manager&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); element not interactable
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element not interactable&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=80.0.3987.149)&#34;,&#34;  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)&#34;]},&#34;errorStatus&#34;:60,&#34;error&#34;:&#34;element not interactable&#34;,&#34;httpStatusCode&#34;:200}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  TimeoutError: An error occurred while running .click() command on &lt;#select2-sales-person-container&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); element click intercepted: Element &lt;span class=&#34;select2-selection__rendered&#34; id=&#34;select2-sales-person-container&#34; role=&#34;textbox&#34; aria-readonly=&#34;true&#34;&gt;...&lt;/span&gt; is not clickable at point (593, 599). Other element would receive the click: &lt;div class=&#34;footer-nav-fixed with-secondary-sidebar&#34;&gt;...&lt;/div&gt;
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element click intercepted: Element &lt;span class=\&#34;select2-selection__rendered\&#34; id=\&#34;select2-sales-person-container\&#34; role=\&#34;textbox\&#34; aria-readonly=\&#34;true\&#34;&gt;...&lt;/span&gt; is not clickable at point (593, 599). Other element would receive the click: &lt;div class=\&#34;footer-nav-fixed with-secondary-sidebar\&#34;&gt;...&lt;/div&gt;&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=80.0.3987.149)&#34;,&#34;  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)&#34;]},&#34;errorStatus&#34;:64,&#34;error&#34;:&#34;element click intercepted: Element &lt;span class=\&#34;select2-selection__rendered\&#34; id=\&#34;select2-sales-person-container\&#34; role=\&#34;textbox\&#34; aria-readonly=\&#34;true\&#34;&gt;...&lt;/span&gt; is not clickable at point (593, 599). Other element would receive the click: &lt;div class=\&#34;footer-nav-fixed with-secondary-sidebar\&#34;&gt;...&lt;/div&gt;&#34;,&#34;httpStatusCode&#34;:200}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;.select2-results__options&gt;li:nth-of-type(2)&gt;: undefined; undefined
+   {&#34;sessionId&#34;:&#34;91982e978fe40946a7650947aa0ad238&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;#app &gt; main &gt; div &gt; div.business-type-wrapper &gt; div:nth-child(2) &gt; div &gt; div &gt; div &gt; select&gt;: undefined; undefined
+   {&#34;sessionId&#34;:&#34;91982e978fe40946a7650947aa0ad238&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;getElementById(&#39;100000000&#39;).selectedIndex = &#39;1&#39;&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); invalid selector: An invalid or illegal selector was specified
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;invalid selector: An invalid or illegal selector was specified&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=80.0.3987.149)&#34;,&#34;  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)&#34;]},&#34;errorStatus&#34;:32,&#34;error&#34;:&#34;invalid selector: An invalid or illegal selector was specified&#34;,&#34;httpStatusCode&#34;:200}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
+[0;31m  NoSuchElementError: An error occurred while running .click() command on &lt;#app &gt; main &gt; div &gt; div.business-type-wrapper &gt; div:nth-child(2) &gt; div &gt; div &gt; div &gt; select &gt; option value =&#39;4&#39;&gt;:   (Session info: chrome=80.0.3987.149),  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64); invalid selector: An invalid or illegal selector was specified
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;invalid selector: An invalid or illegal selector was specified&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=80.0.3987.149)&#34;,&#34;  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)&#34;]},&#34;errorStatus&#34;:32,&#34;error&#34;:&#34;invalid selector: An invalid or illegal selector was specified&#34;,&#34;httpStatusCode&#34;:200}[0m
 [0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)[0m
     </system-err>
   

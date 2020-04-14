@@ -1,20 +1,29 @@
 {
-    "src_folders": ["tests"],
+    "src_folders": ["C://Users//ashok//OneDrive//Documents//automation_testing//Propel-Nightwatch//tests"],
     "output_folder": "reports/XMLReports",
-    "custom_commands_path": "",
+    "unit_tests_mode": "true",
+    "custom_commands_path": "", 
     "custom_assertions_path": "",
     "page_objects_path": "pages",
     "selenium": {
       "start_process": true,
-      "server_path": "C://Users//ashok//OneDrive//Documents//Propel-Nightwatch//lib//drivers//selenium-server-standalone-3.141.59.jar",
+      "server_path": "C://Users//ashok//OneDrive//Documents//automation_testing//Propel-Nightwatch//lib//drivers//selenium-server-standalone-3.141.59.jar",
       "start_session": true,
       "log_path": "log/",
       "host": "127.0.0.1",
       "port": 4444,
       "cli_args": {
-        "webdriver.chrome.driver": "C://Users//ashok//OneDrive//Documents//Propel-Nightwatch//lib//drivers//chromedriver.exe"
+        "webdriver.chrome.driver": "C://Users//ashok//OneDrive//Documents//automation_testing//Propel-Nightwatch//lib//drivers//chromedriver.exe",
+        "webdriver.gecko.driver": "bin/geckodriver",
+      "webdriver.opera.driver": "bin/operadriver"
       }
     },
+    
+      "test_workers": {
+        "enabled": true,
+        "workers": "auto"
+      },
+    
     "test_settings" : {
         "chrome": {
             "launch_url": "http://localhost",
@@ -36,11 +45,27 @@
               }
             }
           },
+          "firefox": {
+            "desiredCapabilities": {
+              "browserName": "firefox",
+              "marionette": true
+            }
+          },
+          "opera": {
+            "desiredCapabilities": {
+              "browserName": "opera"
+            }
+          },
   
       "edge" : {
         "desiredCapabilities": {
           "browserName": "MicrosoftEdge"
         }
+      },
+      "unittests" : {
+        "unit_tests_mode" : true,
+        "filter" : "C://Users//ashok//OneDrive//Documents//automation_testing//Propel-Nightwatch//tests//demo.js",
+        "exclude" : ""
       }
     }
 }
